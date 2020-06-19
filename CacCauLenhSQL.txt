@@ -1,0 +1,13 @@
+* Lấy Toàn Bộ Danh Mục
+SELECT * FROM qlbh_kt.category;
+* Thêm Sản Phẩm Danh Mục
+INSERT INTO `qlbh_kt`.`category` (`idcategory`, `namecategory`, `images`, `title`) VALUES ('?', '?', '?', '?');
+EX:
+INSERT INTO `qlbh_kt`.`category` (`idcategory`, `namecategory`, `images`, `title`) VALUES ('2', 'Xe Cộ', 'https://static.danhgiaxe.com/data/201525/10-volkswagen-scirocco-based-on-the-fantastic-volkswagen-gti-the-scirocco-offers-a-wide-stance-and-an-aggressive-angular-front-headlight-and-grille-combo_323.jpg', 'Xe Cộ');
+
+INSERT INTO `qlbh_kt`.`category` (`idcategory`, `namecategory`, `images`, `title`) VALUES ('3', 'Điện Tử', 'https://img.lovepik.com/photo/50052/2437.jpg_wh860.jpg', 'Điện Tử');
+* Sửa Sản Phẩm Với id = 2
+UPDATE `qlbh_kt`.`category` SET `namecategory` = 'Đồ ăn', `images` = 'https://baobinhphuoc.com.vn/Content/UploadFiles/EditorFiles/images/2016/Quy4/149652016123023314731122016092053.jpg', `title` = 'Đồ ăn' WHERE (`idcategory` = '2');
+* Xóa Sản Phẩm Với ID = 3
+DELETE FROM `qlbh_kt`.`category` WHERE (`idcategory` = '3');
+
